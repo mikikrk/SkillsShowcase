@@ -80,4 +80,9 @@ dependencies {
 
     // GSON
     implementation("com.google.code.gson:gson:2.8.2")
+
+    // Glide
+    implementation("com.github.bumptech.glide:glide:4.8.0")
+    kapt("com.github.bumptech.glide:compiler:4.8.0")
+
 }

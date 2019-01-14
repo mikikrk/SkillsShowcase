@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Layout" />
+
+    <style name="Layout.Container">
+        <item name="android:paddingStart">@dimen/padding_horizontal_layout_container</item>
+        <item name="android:paddingEnd">@dimen/padding_horizontal_layout_container</item>
+        <item name="android:paddingTop">@dimen/padding_vertical_layout_container</item>
+        <item name="android:paddingBottom">@dimen/padding_vertical_layout_container</item>
+    </style>
+
+    <style name="Layout.Container.Item">
+        <item name="android:paddingStart">@dimen/padding_horizontal_item_container</item>
+        <item name="android:paddingEnd">@dimen/padding_horizontal_item_container</item>
+        <item name="android:paddingTop">@dimen/padding_vertical_item_container</item>
+        <item name="android:paddingBottom">@dimen/padding_vertical_item_container</item>
+    </style>
+</resources>
