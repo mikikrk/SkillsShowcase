@@ -3,6 +3,7 @@
           xmlns:tools="http://schemas.android.com/tools" package="com.mikolajnowak.skillsshowcase">
 
     <application
+            android:name=".SkillsShowcaseApplication"
             android:icon="@mipmap/ic_launcher"
             android:label="@string/app_name"
             android:roundIcon="@mipmap/ic_launcher_round"
@@ -10,7 +11,7 @@
             android:allowBackup="true"
             android:theme="@style/AppTheme"
             tools:ignore="AllowBackup,GoogleAppIndexingWarning">
-        <activity android:name=".MainActivity">
+        <activity android:name=".feature.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
