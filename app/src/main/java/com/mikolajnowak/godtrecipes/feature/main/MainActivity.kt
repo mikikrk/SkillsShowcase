@@ -1,7 +1,7 @@
-package com.mikolajnowak.godtreceipes.feature.main
+package com.mikolajnowak.godtrecipes.feature.main
 
 import android.os.Bundle
-import com.mikolajnowak.godtreceipes.R
+import com.mikolajnowak.godtrecipes.R
 import dagger.android.support.DaggerAppCompatActivity
 
 class MainActivity : DaggerAppCompatActivity() {

@@ -1,6 +1,6 @@
-package com.mikolajnowak.godtreceipes.di.view
+package com.mikolajnowak.godtrecipes.di.view
 
-import com.mikolajnowak.godtreceipes.feature.main.MainActivity
+import com.mikolajnowak.godtrecipes.feature.main.MainActivity
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
