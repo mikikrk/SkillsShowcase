@@ -1,6 +1,6 @@
-package com.mikolajnowak.skillsshowcase
+package com.mikolajnowak.godtreceipes
 
-import com.mikolajnowak.skillsshowcase.di.DaggerApplicationComponent
+import com.mikolajnowak.godtreceipes.di.DaggerApplicationComponent
 import dagger.android.AndroidInjector
 import dagger.android.support.DaggerApplication
 
