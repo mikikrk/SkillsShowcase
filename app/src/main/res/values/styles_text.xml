@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Text" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/text_default</item>
+        <item name="android:textSize">@dimen/text_default</item>
+    </style>
+
+    <style name="Text.ItemTitle">
+        <item name="android:textSize">@dimen/text_item_title</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.Label">
+        <item name="android:textSize">@dimen/text_label</item>
+        <item name="android:textColor">@color/text_label</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+</resources>

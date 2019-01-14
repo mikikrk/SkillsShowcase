@@ -7,4 +7,5 @@
     <dimen name="padding_vertical_item_container">12dp</dimen>
 
     <dimen name="gap_separate_group_items">24dp</dimen>
+    <dimen name="gap_same_group_items">8dp</dimen>
 </resources>

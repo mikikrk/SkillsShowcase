@@ -2,4 +2,6 @@
     <string name="app_name">GdtoRecipes</string>
 
     <string name="hint_search">Search</string>
+
+    <string name="image_description_recipe_thumbnail">Recipe thumbnail</string>
 </resources>
