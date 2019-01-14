@@ -1,4 +1,4 @@
-package com.mikolajnowak.skillsshowcase.network
+package com.mikolajnowak.godtreceipes.network
 
 import io.reactivex.Single
 import okhttp3.ResponseBody

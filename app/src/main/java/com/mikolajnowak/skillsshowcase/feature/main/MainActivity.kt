@@ -1,7 +1,7 @@
-package com.mikolajnowak.skillsshowcase.feature.main
+package com.mikolajnowak.godtreceipes.feature.main
 
 import android.os.Bundle
-import com.mikolajnowak.skillsshowcase.R
+import com.mikolajnowak.godtreceipes.R
 import dagger.android.support.DaggerAppCompatActivity
 
 class MainActivity : DaggerAppCompatActivity() {

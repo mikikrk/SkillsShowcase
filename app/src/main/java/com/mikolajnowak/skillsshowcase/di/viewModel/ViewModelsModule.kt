@@ -1,4 +1,4 @@
-package com.mikolajnowak.skillsshowcase.di.viewModel
+package com.mikolajnowak.godtreceipes.di.viewModel
 
 import dagger.Module
 

@@ -1,4 +1,4 @@
-package com.mikolajnowak.skillsshowcase.data
+package com.mikolajnowak.godtreceipes.data
 
 import com.google.gson.GsonBuilder
 import dagger.Module

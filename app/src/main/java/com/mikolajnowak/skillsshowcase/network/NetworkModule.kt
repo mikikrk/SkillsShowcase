@@ -1,7 +1,7 @@
-package com.mikolajnowak.skillsshowcase.network
+package com.mikolajnowak.godtreceipes.network
 
 import com.google.gson.Gson
-import com.mikolajnowak.skillsshowcase.BuildConfig
+import com.mikolajnowak.godtreceipes.BuildConfig
 import dagger.Module
 import dagger.Provides
 import okhttp3.OkHttpClient
