@@ -8,6 +8,6 @@ class RecipesActivity : DaggerAppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.receipes_activity)
+        setContentView(R.layout.recipes_activity)
     }
 }
