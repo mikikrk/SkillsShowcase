@@ -2,6 +2,7 @@ package com.mikolajnowak.skillsshowcase.di
 
 import android.app.Application
 import com.mikolajnowak.skillsshowcase.SkillsShowcaseApplication
+import com.mikolajnowak.skillsshowcase.di.view.ContributeModule
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjector
@@ -12,7 +13,8 @@ import javax.inject.Singleton
 @Singleton
 @Component(
     modules = [
-        AndroidSupportInjectionModule::class
+        AndroidSupportInjectionModule::class,
+        ContributeModule::class
     ]
 )
 interface ApplicationComponent : AndroidInjector<DaggerApplication> {
