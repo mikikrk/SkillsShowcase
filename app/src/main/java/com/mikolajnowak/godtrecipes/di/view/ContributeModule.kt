@@ -1,6 +1,6 @@
 package com.mikolajnowak.godtrecipes.di.view
 
-import com.mikolajnowak.godtrecipes.feature.main.MainActivity
+import com.mikolajnowak.godtrecipes.feature.recipe.RecipesActivity
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
@@ -8,5 +8,5 @@ import dagger.android.ContributesAndroidInjector
 abstract class ContributeModule {
 
     @ContributesAndroidInjector
-    abstract fun contributeMainActivity(): MainActivity
+    abstract fun contributeMainActivity(): RecipesActivity
 }
