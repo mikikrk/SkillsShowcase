@@ -4,6 +4,7 @@ import android.app.Application
 import com.mikolajnowak.skillsshowcase.SkillsShowcaseApplication
 import com.mikolajnowak.skillsshowcase.di.view.ContributeModule
 import com.mikolajnowak.skillsshowcase.di.viewModel.ViewModelsModule
+import com.mikolajnowak.skillsshowcase.network.NetworkModule
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjector
@@ -16,7 +17,8 @@ import javax.inject.Singleton
     modules = [
         AndroidSupportInjectionModule::class,
         ContributeModule::class,
-        ViewModelsModule::class
+        ViewModelsModule::class,
+        NetworkModule::class
     ]
 )
 interface ApplicationComponent : AndroidInjector<DaggerApplication> {
