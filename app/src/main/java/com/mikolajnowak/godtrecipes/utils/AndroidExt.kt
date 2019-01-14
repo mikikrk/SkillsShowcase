@@ -7,7 +7,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
+import android.widget.ImageView
 import androidx.annotation.LayoutRes
+import com.mikolajnowak.godtrecipes.network.GlideApp
 
 val Context.inflater: LayoutInflater
     get() = LayoutInflater.from(this)
@@ -27,4 +29,8 @@ fun EditText.addOnTextChangedListener(callback: (CharSequence?, Int, Int, Int) -
             callback(s, start, before, count)
         }
     })
+}
+
+fun ImageView.loadImage(url: String) {
+    GlideApp.with(context).load(url).into(this)
 }
