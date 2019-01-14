@@ -8,7 +8,7 @@ data class Recipe(
         @PrimaryKey
         val id: String,
         val title: String,
-        val imageUrl: String,
+        val imageUrl: String?,
         val description: String,
         val ingredients: List<String>
 )
