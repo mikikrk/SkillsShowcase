@@ -9,13 +9,14 @@ import android.view.ViewGroup
 import android.widget.EditText
 import android.widget.ImageView
 import androidx.annotation.LayoutRes
+import androidx.core.text.HtmlCompat
 import com.mikolajnowak.godtrecipes.network.GlideApp
 
 val Context.inflater: LayoutInflater
     get() = LayoutInflater.from(this)
 
 fun ViewGroup.inflate(@LayoutRes resId: Int, attachToRoot: Boolean = false): View =
-    context.inflater.inflate(resId, this, attachToRoot)
+        context.inflater.inflate(resId, this, attachToRoot)
 
 fun EditText.addOnTextChangedListener(callback: (CharSequence?, Int, Int, Int) -> Unit) {
     addTextChangedListener(object : TextWatcher {
@@ -34,3 +35,6 @@ fun EditText.addOnTextChangedListener(callback: (CharSequence?, Int, Int, Int) -
 fun ImageView.loadImage(url: String) {
     GlideApp.with(context).load(url).into(this)
 }
+
+fun String.toHtml() =
+        HtmlCompat.fromHtml(this, HtmlCompat.FROM_HTML_MODE_COMPACT)

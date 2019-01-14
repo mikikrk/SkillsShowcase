@@ -2,6 +2,8 @@ package com.mikolajnowak.godtrecipes.di
 
 import android.app.Application
 import com.mikolajnowak.godtrecipes.SkillsShowcaseApplication
+import com.mikolajnowak.godtrecipes.data.DataModule
+import com.mikolajnowak.godtrecipes.data.room.RoomModule
 import com.mikolajnowak.godtrecipes.di.view.ContributeModule
 import com.mikolajnowak.godtrecipes.di.viewModel.ViewModelsModule
 import com.mikolajnowak.godtrecipes.network.NetworkModule
@@ -16,9 +18,12 @@ import javax.inject.Singleton
 @Component(
     modules = [
         AndroidSupportInjectionModule::class,
+        ApplicationModule::class,
         ContributeModule::class,
         ViewModelsModule::class,
-        NetworkModule::class
+        NetworkModule::class,
+        DataModule::class,
+        RoomModule::class
     ]
 )
 interface ApplicationComponent : AndroidInjector<DaggerApplication> {

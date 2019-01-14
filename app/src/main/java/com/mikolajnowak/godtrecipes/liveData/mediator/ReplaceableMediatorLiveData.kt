@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
 import androidx.lifecycle.Observer
 
-class ReplaceableMediatorLiveData<T> : MediatorLiveData<T>() {
+open class ReplaceableMediatorLiveData<T> : MediatorLiveData<T>() {
 
     private var previousSource: LiveData<T>? = null
 

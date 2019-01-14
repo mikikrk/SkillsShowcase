@@ -1,5 +1,6 @@
 package com.mikolajnowak.godtrecipes.feature.recipe.list
 
+import android.text.Html
 import android.view.View
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.Observer
@@ -25,7 +26,7 @@ class RecipeItemViewHolder(
         title?.let { titleTV.text = it }
     }
     private val descriptionObserver = Observer<String> { description ->
-        description?.let { descriptionTV.text = it }
+        description?.let { descriptionTV.text = Html.fromHtml(it, Html.FROM_HTML_MODE_COMPACT) }
     }
     private val ingredientsObserver = Observer<List<String>> { ingredients ->
         ingredients?.let { ingredientsTV.text = it.toString() }

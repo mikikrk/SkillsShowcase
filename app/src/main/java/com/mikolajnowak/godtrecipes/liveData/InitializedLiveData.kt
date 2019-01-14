@@ -4,7 +4,7 @@ import androidx.lifecycle.MutableLiveData
 
 class InitializedLiveData<T>(
 
-        initialValue: T
+        initialValue: T?
 
 ) : MutableLiveData<T>() {
 
