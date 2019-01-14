@@ -1,6 +1,6 @@
-package com.mikolajnowak.godtreceipes
+package com.mikolajnowak.godtrecipes
 
-import com.mikolajnowak.godtreceipes.di.DaggerApplicationComponent
+import com.mikolajnowak.godtrecipes.di.DaggerApplicationComponent
 import dagger.android.AndroidInjector
 import dagger.android.support.DaggerApplication
 

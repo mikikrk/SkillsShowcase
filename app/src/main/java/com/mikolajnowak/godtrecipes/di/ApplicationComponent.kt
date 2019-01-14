@@ -1,10 +1,10 @@
-package com.mikolajnowak.godtreceipes.di
+package com.mikolajnowak.godtrecipes.di
 
 import android.app.Application
-import com.mikolajnowak.godtreceipes.SkillsShowcaseApplication
-import com.mikolajnowak.godtreceipes.di.view.ContributeModule
-import com.mikolajnowak.godtreceipes.di.viewModel.ViewModelsModule
-import com.mikolajnowak.godtreceipes.network.NetworkModule
+import com.mikolajnowak.godtrecipes.SkillsShowcaseApplication
+import com.mikolajnowak.godtrecipes.di.view.ContributeModule
+import com.mikolajnowak.godtrecipes.di.viewModel.ViewModelsModule
+import com.mikolajnowak.godtrecipes.network.NetworkModule
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjector
