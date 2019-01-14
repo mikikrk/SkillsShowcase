@@ -1,6 +1,7 @@
 package com.mikolajnowak.godtrecipes.di.viewModel
 
 import androidx.lifecycle.ViewModel
+import com.mikolajnowak.godtrecipes.data.recipe.RecipesRepository
 import com.mikolajnowak.godtrecipes.feature.recipe.RecipesViewModel
 import com.mikolajnowak.godtrecipes.feature.recipe.RecipesViewModelImpl
 import dagger.Module
@@ -13,6 +14,6 @@ class ViewModelsModule {
     @Provides
     @IntoMap
     @ViewModelKey(RecipesViewModel::class)
-    fun provideRecipesVM(): ViewModel =
-            RecipesViewModelImpl()
+    fun provideRecipesVM(repository: RecipesRepository): ViewModel =
+            RecipesViewModelImpl(repository)
 }
