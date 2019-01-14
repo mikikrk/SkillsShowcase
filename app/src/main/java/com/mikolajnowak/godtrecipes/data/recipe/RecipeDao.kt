@@ -2,6 +2,8 @@ package com.mikolajnowak.godtrecipes.data.recipe
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
+import androidx.room.Insert
+import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import com.mikolajnowak.godtrecipes.data.recipe.model.Recipe
 
@@ -13,4 +15,7 @@ interface RecipeDao {
 
     @Query("SELECT * FROM recipe WHERE title LIKE '%' || :searchQuery || '%' OR ingredients LIKE '%' || :searchQuery || '%'")
     fun findRecipies(searchQuery: String): LiveData<List<Recipe>>
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    fun insertAll(recipies: List<Recipe>)
 }
