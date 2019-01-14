@@ -19,6 +19,7 @@ android {
         versionCode = 1
         versionName = "1.0"
         testInstrumentationRunner = "android.support.test.runner.AndroidJUnitRunner"
+        buildConfigField("String", "API_URL", "\"https://www.godt.no/api/\"")
     }
 
     androidExtensions {
