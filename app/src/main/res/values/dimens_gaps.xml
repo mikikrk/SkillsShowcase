@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="padding_horizontal_layout_container">16dp</dimen>
+    <dimen name="padding_vertical_layout_container">16dp</dimen>
+    <dimen name="padding_horizontal_item_container">12dp</dimen>
+    <dimen name="padding_vertical_item_container">12dp</dimen>
+
+    <dimen name="gap_separate_group_items">24dp</dimen>
+</resources>
