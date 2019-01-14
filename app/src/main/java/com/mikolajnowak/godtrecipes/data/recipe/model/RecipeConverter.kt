@@ -7,4 +7,5 @@ fun RecipeResponse.toEntity() =
                 title,
                 images.firstOrNull()?.url,
                 description,
-                ingredients.map { it.name })
+                ingredients.flatMap { collectionResponse -> collectionResponse.elements }
+                        .map { ingredient -> ingredient.name })
