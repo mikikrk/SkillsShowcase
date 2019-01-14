@@ -6,6 +6,7 @@ import com.mikolajnowak.godtrecipes.liveData.InitializedLiveData
 
 interface RecipeItemViewModel {
 
+    val id: LiveData<String>
     val title: LiveData<String>
     val imageUrl: LiveData<String>
     val description: LiveData<String>
@@ -18,6 +19,7 @@ class RecipeItemViewModelImpl(
 
 ) : RecipeItemViewModel {
 
+    override val id = InitializedLiveData(recipe.id)
     override val title = InitializedLiveData(recipe.title)
     override val imageUrl = InitializedLiveData(recipe.imageUrl)
     override val description = InitializedLiveData(recipe.description)
