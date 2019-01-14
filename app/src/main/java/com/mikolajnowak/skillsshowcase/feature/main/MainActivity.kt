@@ -1,7 +1,8 @@
-package com.mikolajnowak.skillsshowcase
+package com.mikolajnowak.skillsshowcase.feature.main
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.mikolajnowak.skillsshowcase.R
 
 class MainActivity : AppCompatActivity() {
 
